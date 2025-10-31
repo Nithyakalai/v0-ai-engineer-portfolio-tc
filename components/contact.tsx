@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useState } from "react"
-import { Mail, Linkedin, Github, Send } from "lucide-react"
+import { Mail, Linkedin, Github, Send, Phone } from "lucide-react"
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -101,6 +101,20 @@ export default function Contact() {
                     className="text-primary hover:text-accent transition-colors"
                   >
                     nithyakalaichelvan907@gmail.com
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-card/50 border border-border rounded-xl p-6 hover:border-primary transition-colors duration-300 group cursor-pointer">
+              <div className="flex items-start gap-4">
+                <div className="p-3 bg-primary/20 rounded-lg group-hover:bg-primary/40 transition-all duration-300 mt-1">
+                  <Phone size={24} className="text-primary" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-foreground mb-1">Phone</h3>
+                  <a href="tel:9876789564" className="text-primary hover:text-accent transition-colors">
+                    9876789564
                   </a>
                 </div>
               </div>

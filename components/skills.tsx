@@ -1,5 +1,7 @@
 "use client"
 
+import SingleTextTyping from "./single-text-typing"
+
 const skillCategories = [
   {
     category: "Languages",
@@ -36,7 +38,7 @@ export default function Skills() {
               style={{ animationDelay: `${idx * 0.1}s` }}
             >
               <h3 className="text-xl font-semibold mb-6 text-primary group-hover:text-accent transition-colors">
-                {cat.category}
+                <SingleTextTyping text={cat.category} startDelay={idx * 400} speed={50} />
               </h3>
               <div className="flex flex-wrap gap-3">
                 {cat.skills.map((skill) => (
