@@ -74,7 +74,7 @@ export default function Contact() {
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 rows={5}
                 className="w-full px-4 py-3 bg-card border border-border rounded-lg text-foreground placeholder-foreground/50 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all duration-300 resize-none"
-                placeholder="Tell me about your project..."
+                placeholder="Your message..."
               />
             </div>
 
@@ -133,7 +133,7 @@ export default function Contact() {
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">GitHub</h3>
                   <a
-                    href="https://github.com"
+                    href="https://github.com/Nithyakalai"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-primary hover:text-accent transition-colors"
