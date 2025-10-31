@@ -2,6 +2,7 @@
 
 import { ArrowRight, Download } from "lucide-react"
 import Link from "next/link"
+import TypingAnimation from "./typing-animation"
 
 export default function Hero() {
   return (
@@ -42,7 +43,10 @@ export default function Hero() {
           className="text-xl md:text-2xl text-foreground/70 mb-4 max-w-2xl mx-auto leading-relaxed animate-slide-in-up"
           style={{ animationDelay: "0.2s" }}
         >
-          AI Engineer | Machine Learning Developer | Deep Learning Enthusiast
+          <TypingAnimation
+            texts={["AI Engineer", "Machine Learning Developer", "Deep Learning Enthusiast"]}
+            delay={80}
+          />
         </p>
 
         <p
